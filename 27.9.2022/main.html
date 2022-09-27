@@ -13,17 +13,43 @@
         p {
             font-size: 50px;
         }
+        .mid {
+           display: flex;
+           justify-content: center; 
+        }
+        .section {
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
         .red {
             color: red;
         }
-        .button {
-            height: 50px;
-            width: 100px;
+        .light {
+            width: 140px;
+           height: 195px;
+        }
+        .lightOFF{
+            background-image: url('/27.9.2022/img/OFFbulb.jpg');
+        }
+        .lightON{
+            background-image: url('/27.9.2022/img/ONbulb.jpg');
         }
     </style>
 </head>
 <body>
+    
+    <div class="mid">
+        <div class="section">
     <p id="line">Linijka jakas</p>
-    <button class="button">CHANGE COLOUR</button>
+    <button id="textBtn" >CHANGE COLOUR</button>
+</div>
+<div class="section">
+    <div class=" light lightOFF" id="light"></div>
+    <button id="lightBtn"> TURN ON/OFF</button>
+</div>
+</div>
 </body>
 </html>
