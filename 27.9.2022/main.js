@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    document.write("Hello Word");
-    document.write("<br/>");
-    document.write("Hello Word")
+    const linijka = this.getElementById('line');
+    const button = document.querySelector('button')
+
+
+button.addEventListener('click', function() {
+
+    linijka.classList.toggle('red');
+
+})
+
+   
 
 })
