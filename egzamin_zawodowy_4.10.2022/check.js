@@ -8,7 +8,7 @@ var answer;
 
 buttonCheck.addEventListener('click', function() {
 
-    const password = this.getElementById('password');
+    const password = document.getElementById('password');
 
     var lenght = password.lenght;
 
@@ -20,7 +20,7 @@ buttonCheck.addEventListener('click', function() {
         {
             if(lenght => 7)
             {
-                document.getElementById('answer').innerHTML =  "Dobre";
+                document.getElementById('answer').innerHTML =  '<p> Dobre </p>';
                
             } else if(lenght => 4)
             {
