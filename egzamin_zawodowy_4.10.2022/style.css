@@ -1,0 +1,67 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #829EB9;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    
+    font-size: 40px;
+    text-align: center;
+    
+}
+.leftBanner {
+   
+    height: 600px;
+    width: 25%;
+    background-color: #B3C6D9;
+}
+.rightBanner{
+    
+    height: 600px;
+    width: 75%;
+    background-color: #E0E9F1;
+}
+.wybierz{
+    position: relative;
+   
+    top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.list{
+    position: relative;
+    top: 20px;
+    padding: 30px;
+}
+
+.haslo{
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   height: 200px;
+    
+}
+.inputArea{
+    text-align: center;
+    padding: 30px;
+}
+.answer{
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+
