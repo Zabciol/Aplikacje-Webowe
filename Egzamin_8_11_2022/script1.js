@@ -9,7 +9,7 @@ const btnOdejmowania = document.getElementById("odejmowanie");
 const btnMnozenia = document.getElementById("mnozenie");
 const btnDzielenia = document.getElementById("dzielenie");
 
- function getValues()
+function getValues()
 {
     podstawaPotegi =parseInt( document.getElementById("liczba1").value);
     wykladnikPotegi =parseInt( document.getElementById("liczba2").value);
@@ -26,10 +26,10 @@ function czyPuste()
     }
  }
 
-
 btnDodawania.addEventListener('click' , () => {
     console.log("dodawanie");
-    if(czyPuste() == false){
+    if(!czyPuste())
+    {
         getValues();
         wynik = podstawaPotegi + wykladnikPotegi;
         document.getElementById("wynik").innerHTML ='wynik to:  ' + wynik;
@@ -38,9 +38,8 @@ btnDodawania.addEventListener('click' , () => {
 
 btnOdejmowania.addEventListener('click' , () => {
     console.log("odejmowanie");
-    
-
-    if(czyPuste() == false){
+    if(!czyPuste())
+    {
         getValues();
         wynik = podstawaPotegi - wykladnikPotegi;
         document.getElementById("wynik").innerHTML ='wynik to:  ' + wynik;
@@ -49,7 +48,8 @@ btnOdejmowania.addEventListener('click' , () => {
 
 btnMnozenia.addEventListener('click' , () => {
     console.log("mnoezenie");
-    if(czyPuste() == false){
+    if(!czyPuste())
+    {
         getValues();
         wynik = podstawaPotegi * wykladnikPotegi;
         document.getElementById("wynik").innerHTML ='wynik to:  ' + wynik;
@@ -58,9 +58,9 @@ btnMnozenia.addEventListener('click' , () => {
 
 btnDzielenia.addEventListener('click' , () => {
     console.log("dzielenie");
-    if(czyPuste() == false){
+    if(!czyPuste())
+    {
         getValues();
-
         if(wykladnikPotegi == 0)
         {
             document.getElementById("wynik").innerHTML ='nie wolno dzielicprzez zero'; 
