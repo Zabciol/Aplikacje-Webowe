@@ -15,20 +15,20 @@ function getValues()
     wykladnikPotegi =parseInt( document.getElementById("liczba2").value);
 }
 
-function czyPuste()
+function czyNieJestPuste()
  {
     if(isNaN(podstawaPotegi) || isNaN(wykladnikPotegi))
     {
-        document.getElementById("wynik").innerHTML ='Prosze uzupelnic obie liczby'
-        return true;
-    }else{
+        document.getElementById("wynik").innerHTML ='Prosze uzupelnic obie liczby';
         return false;
+    }else{
+        return true;
     }
  }
 
 btnDodawania.addEventListener('click' , () => {
     console.log("dodawanie");
-    if(!czyPuste())
+    if(czyNieJestPuste())
     {
         getValues();
         wynik = podstawaPotegi + wykladnikPotegi;
@@ -38,7 +38,7 @@ btnDodawania.addEventListener('click' , () => {
 
 btnOdejmowania.addEventListener('click' , () => {
     console.log("odejmowanie");
-    if(!czyPuste())
+    if(czyNieJestPuste())
     {
         getValues();
         wynik = podstawaPotegi - wykladnikPotegi;
@@ -48,7 +48,7 @@ btnOdejmowania.addEventListener('click' , () => {
 
 btnMnozenia.addEventListener('click' , () => {
     console.log("mnoezenie");
-    if(!czyPuste())
+    if(czyNieJestPuste())
     {
         getValues();
         wynik = podstawaPotegi * wykladnikPotegi;
@@ -58,12 +58,12 @@ btnMnozenia.addEventListener('click' , () => {
 
 btnDzielenia.addEventListener('click' , () => {
     console.log("dzielenie");
-    if(!czyPuste())
+    if(czyNieJestPuste())
     {
         getValues();
         if(wykladnikPotegi == 0)
         {
-            document.getElementById("wynik").innerHTML ='nie wolno dzielicprzez zero'; 
+            document.getElementById("wynik").innerHTML ='nie wolno dzielic przez zero'; 
         }else{
             wynik = podstawaPotegi / wykladnikPotegi;
             document.getElementById("wynik").innerHTML ='wynik to:  ' + wynik;
