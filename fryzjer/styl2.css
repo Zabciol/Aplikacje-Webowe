@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+}
+.left{
+    width: 70%;
+    background-color: snow;
+}
+.left1{
+    height: 400px;
+    text-align: center;
+}
+.left2{
+    height: 400px;
+    font-size: 150%;
+}
+
+.right{
+width: 30%;
+font: white;
+background-color: steelblue;
+}
+
+.right1{
+    height: 150px;
+    text-align: center;
+}
+
+.right2{
+    height: 350px;
+}
+.right3{
+    height: 300px;
+    background-color: snow;
+    text-align: center;
+}
+
+footer{
+    background-color: steelblue;
+    font: white;;
+}

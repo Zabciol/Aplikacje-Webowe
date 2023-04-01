@@ -1,0 +1,2 @@
+SELECT imie, nazwisko from kadra where stanowisko='fryzjer';
+select COUNT(id) from uslugi where rodzaj = 2;

@@ -1,0 +1,16 @@
+Zapytanie 1: wybierające jedynie pola id, nazwa i wystepowanie z tabeli Ryby dla ryb
+drapieżnych:
+SELECT id,nazwa,wystepowanie FROM `ryby` WHERE ryby.styl_zycia = 1
+
+Zapytanie 2: wybierające jedynie pola Ryby_id oraz wymiar_ochronny z tabeli
+Okres_ochronny dla ryb, których wymiar ochronny jest mniejszy niż 30 cm:
+SELECT Ryby_id, wymiar_ochronny FROM `okres_ochronny` WHERE wymiar_ochronny < 30
+
+Zapytanie 3: wybierające jedynie pole nazwa z tabeli Ryby oraz odpowiadające tej nazwie
+pola akwen i wojewodztwo z tabeli Lowisko dla łowisk, które są rzekami. Zapytanie
+wykorzystuje relację:
+SELECT ryby.nazwa,lowisko.akwen ,lowisko.wojewodztwo from lowisko INNER JOIN ryby ON ryby.id = lowisko.Ryby_id WHERE rodzaj = 3
+
+Zapytanie 4: dodające do tabeli Ryby kolumnę dobowy_limit typu numerycznego, o rozmiarze
+pozwalającym na wpisanie jedynie liczb z przedziału <0, 255> 
+ALTER TABLE ryby ADD dobowy_limit varchar(255)

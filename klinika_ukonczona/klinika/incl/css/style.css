@@ -1,0 +1,103 @@
+
+body {
+	font: normal 12px Verdana;
+	color: #606060;
+	background: url(../img/tlo.jpg) no-repeat;
+}
+
+a {
+	color: #ffcb9f;
+	text-decoration:none;
+}
+a:hover {
+	color: #f87f2e;
+	
+}
+.header{
+	top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.logo {
+	width: 200px;
+	top:10px;
+	left:10px;
+}
+
+.menu {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+
+	width: 1200px;
+}
+.menu a {
+	color: #557721;
+	font: bold 18px Verdana;
+	margin: 0 30px 0 0;
+	text-decoration:none;
+}
+.menu a:hover {
+	color: #f87f2e;
+}
+
+
+.tekst {
+	width: 800px;
+	margin: 20px 0 0 230px;
+	font: bold 12px Verdana;
+	color: #000;
+	line-height: 30px;
+	text-align: justify;
+}
+
+p.malyakapit {
+	font: bold 11px Verdana;
+	color: #000;
+	margin: 0 0 5px 0;
+}
+
+input.przycisk {
+	border:0;
+	background: #f87f2e;
+	font: bold 14px Verdana;
+	color: #fff;
+	padding: 8px;
+}
+
+input.poletekstowe {
+	width: 400px;
+	padding: 10px;
+	border: 1px solid #f87f2e;
+}
+
+select {
+	width: 400px;
+	padding: 10px;
+	border: 1px solid #f87f2e;
+}
+
+textarea {
+	width: 400px;
+	height: 200px;
+	padding: 10px;
+	border: 1px solid #f87f2e;
+}
+
+.naglowek {
+	background: #f87f2e;
+	font: bold 14px Verdana;
+	color: #fff;
+	padding: 8px;
+}
+.tabelka {
+	
+}
+.tabelka tr:nth-child(odd) {
+	background: #efffd6;
+}
+.tabelka tr:nth-child(even) {
+	background: #f7f0b6;
+}
