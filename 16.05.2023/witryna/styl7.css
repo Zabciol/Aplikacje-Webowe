@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+header , footer {
+    background-color: rgb(70,130,180);
+    height: 30px;
+    color: white;
+    text-align: center;
+}
+.glowny {
+    background-color: rgb( 176, 196, 222);
+    padding: 50px;
+    text-align: center;
+}
+
+.glowny img{
+    padding: 3px;
+    border: solid blue 1px;
+    border-radius: 10px;
+}
+.lewy{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 80%;
+}
+.lewy img {
+    height: 40%;
+}
+.lewy img:hover {
+    border: solid white 1px
+}
+.prawy {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 20%;
+}
+.glowny2{
+    display: flex;
+    flex-direction: row;
+}

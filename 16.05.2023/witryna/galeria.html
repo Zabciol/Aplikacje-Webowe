@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <header>
+        <h2>Galeria miejs ciekawych</h2>
+    </header>
+    <div class="glowny">
+        <img id="mainImg" src="img/lanzarotte.jpg" alt="galeria">
+    </div>
+    <div class="glowny2">
+        <div class="lewy">
+            <h3>Przeglądaj zdjęcia</h3>
+            <img  src="img/lanzarotte.jpg" alt="lanzarotte" onclick="changeImg(src)">
+            <img  src="img/pekin.jpg" alt="pekin" onclick="changeImg(src)">
+            <img  src="img/serengeti.jpg" alt="serengeti" onclick="changeImg(src)">
+            <img  src="img/wenecja.jpg" alt="wenecja" onclick="changeImg(src)">
+            <img  src="img/tajlandia.jpg" alt="tajlandia" onclick="changeImg(src)">
+        </div>
+        <div class="prawy">
+            <h3>Obrazy w naszej galerii</h3>
+            <table>
+               <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+               <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            </table>
+            <p>Polub nas
+            <img id="icon" src="img/icon-off.png" alt="icon" onclick="changeIcon()">
+        </p>
+        </div>
+    </div>
+    <footer>
+        <p>Autor: Jan Zabrowicz</p>
+    </footer>
+</body>
+<script>
+
+function changeImg(src) {
+console.log("clicked")
+document.getElementById("mainImg").src = src;
+}
+
+var isOn = false;
+
+function changeIcon() {
+    if(!isOn) {
+    document.getElementById("icon").src = "img/icon-on.png"
+    isOn = !isOn
+    }
+    else {
+    document.getElementById("icon").src = "img/icon-off.png"
+    isOn= !isOn
+}
+}
+</script>
+</html>
